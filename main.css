@@ -1,0 +1,129 @@
+
+html  {
+    background: url('https://images.freeimages.com/images/large-previews/900/mayon-volcano-1409537.jpg') no-repeat center center fixed; 
+    /* -webkit-filter: blur(5px); */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* filter: blur(5px); */
+    font-family: 'Kavivanar', cursive, sans-serif;
+}
+
+
+/* =========================================== */
+/* Buttons, text, pagesScreen, logo and header */
+/* =========================================== */
+.heading_h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.heading_h2 {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+button {
+    background-color: #56999F; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin-top: 50px;
+    width: 100%;
+    font-family: 'Kavivanar', cursive;
+}
+
+button:hover, button:focus {
+    background-color: #344A5F;
+}
+
+.css_score{
+font-size: 1.25em;
+padding-top: 20px;
+}
+
+.css_question {
+    padding-right: 10px;
+}
+
+.screen {
+    background-color: rgba(134, 131, 131, 0.7);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border: solid #293746 2px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+header, main {
+    text-align: center;
+}
+header ul {
+    padding-left: 0;
+}
+
+header ul li {
+    display: inline;
+}
+
+.css_textStyle {
+    color: #E8E8E8;
+}
+
+/* ======================================= */
+/* Answer Form */
+/* ======================================= */
+fieldset {
+    padding: 0;
+    border: none;
+}
+
+.css_optAnswer {
+    background-color: #56999F;
+    border: none;
+    height: 20px;
+    padding: 10px 10px 29px 10px;
+    margin: 5px auto;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 6px #344A5F;
+}
+
+.css_optAnswer:hover {
+    box-shadow: 0 4px #344A5F;
+	top: 2px;    
+}
+
+.css_optAnswer:active, .css_optAnswer:focus{
+    box-shadow: 0 0 #344A5F;
+    top: 6px;
+    background-color:#344A5F;
+}
+
+input[type=radio]:checked{
+    filter: invert();
+}
+
+
+/* ======================================= */
+/* Feedback Form */
+/* ======================================= */
+.css_answerImage {
+    margin: auto;
+    width: 80%;
+    border: solid 2px #56999F;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
