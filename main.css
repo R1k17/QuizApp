@@ -75,7 +75,8 @@ header ul li {
 }
 
 .css_textStyle {
-    color: #E8E8E8;
+    /* color: #E8E8E8; */
+    color: #FFFFFF;
 }
 
 /* ======================================= */
@@ -87,7 +88,8 @@ fieldset {
 }
 
 .css_optAnswer {
-    background-color: #56999F;
+    /* background-color: #56999F; */
+    background-color: #375C5C;
     border: none;
     height: 20px;
     padding: 10px 10px 29px 10px;

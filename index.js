@@ -16,6 +16,7 @@ function questionForm(currentQuestion){
         </div>
         <form class="js_questionForm css_textStyle">
             <fieldset role="group" name="answer options">
+            <legend>Answers</legend>
                 <div class="row">
                     <div class="col-12">
                         <label class="js_optAnswer css_optAnswer">
@@ -120,13 +121,13 @@ function userIsWrong(){
 }
 
 const FeedbackScreen = `
-<section class="js_feedbackScreen" role="main">
+<div class="js_feedbackScreen">
 <div>
 <h2 class="feedbackText heading_h2">PlaceholderText</h2>
 <img class="css_answerImage" src="#" alt="#">
 <button class="js_nextBtn">Next Question</button>
 </div>
-</section>
+</div>
 `;
 
 // ====================================================
