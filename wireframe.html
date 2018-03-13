@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <title>Volcano Quiz</title>
+</head>
+<body class="screen css_textStyle baseContainer">
+    <header role="banner">
+        <div class="row">
+            <div class="col-12">
+                <a href="index.html"><img class="logo" src="https://image.ibb.co/hvhNoH/volcano_Logo.png" alt="Logo displaying an erupting volcano"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="js_counter">
+                    <li>Question: <span class="js_questionCount">1</span>/10</li>
+                    <li>Points: <span class="js_pointCount">0</span>/100</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="mainScreen css_textStyle" role="main">
+        <div>
+            <h1>Volcano Quiz</h1>
+            <h2>Get prepared for some nasty questions!</h2>
+            <button class="js_startBtn">Start</button>
+        </div>
+    </main>   
+    <hr> 
+    <div class="row css_textStyle">
+        <div class="col-12">
+            <h2>${currentQuestion.question}</h2>
+        </div>
+    </div>
+    <form class="js_questionForm css_textStyle">
+        <fieldset role="group" name="answer options">
+            <div class="row">
+                <div class="col-12">
+                    <label class="js_optAnswer css_optAnswer">
+                        <input type="radio" name="answer" value="${currentQuestion.answers[0]}" required>
+                        <span class="js_answer">${currentQuestion.answers[0]}</span>
+                    </label>
+                    <label class="js_optAnswer css_optAnswer">
+                        <input type="radio" name="answer" required>
+                        <span class="js_answer">${currentQuestion.answers[1]}</span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label class="js_optAnswer css_optAnswer">
+                        <input type="radio" name="answer" required>
+                        <span class="js_answer">${currentQuestion.answers[2]}</span>
+                    </label>
+                    <label class="js_optAnswer css_optAnswer">
+                        <input type="radio" name="answer" required>
+                        <span class="js_answer">${currentQuestion.answers[3]}</span>
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="js_submitBtn">Submit</button>
+        </fieldset>
+    </form>
+    <hr>
+    <section class="js_feedbackScreen" role="main">
+        <div>
+            <h2 class="feedbackText">Here comes the positive/negative feedback!</h2>
+            <img class="css_answerImage" src="#" alt="#">
+            <button class="js_nextBtn css_nextBtn">Next Question</button>
+        </div>
+    </section>
+    <hr>
+    <div class="js_results">
+        <h2>Final Score</h2>
+        <p>6 out of 10</p>
+        <button class="js_restartBtn">Play Again?</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="dataStore.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
